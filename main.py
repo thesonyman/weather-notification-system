@@ -2,11 +2,11 @@
 import pyowm
 from pushbullet import Pushbullet
 
-pb = Pushbullet('o.1qg7vXoWHD0PcyWy23HXUyeqSNiLcB5r')
+pb = Pushbullet('Your_pushbulled_api_key')
 
 
 temp = 0.0
-owm = pyowm.OWM('66a269590a6dd028f8cbf9230e4d4cae')  # You MUST provide a valid API key
+owm = pyowm.OWM('Your_open_weathermap_api_key')  # You MUST provide a valid API key
 
 observation = owm.weather_at_place('Kennewick,US')
 w = observation.get_weather()
